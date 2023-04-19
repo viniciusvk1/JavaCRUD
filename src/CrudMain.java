@@ -83,6 +83,7 @@ public class CrudMain {
             default: //Default option to indicate an error of the user's choice
                 System.out.println("Invalid option!\n");
 
+                
         }
         while (chooseMenu != 0) ;
 
