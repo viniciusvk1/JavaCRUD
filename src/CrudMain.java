@@ -44,7 +44,16 @@ public class CrudMain {
                 products.add(productName);
                 System.out.print("Product added successfully!\n");
                 break;
-        } while (chooseMenu != 0);
+            case 2: // Showing all products added
+                System.out.println("=========================================");
+                System.out.println("Available products: ");
+                System.out.println(products);
+                System.out.println();
+                break;
+
+
+        }
+        while (chooseMenu != 0) ;
 
         sc.close();
     }
