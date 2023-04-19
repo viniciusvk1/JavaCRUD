@@ -29,4 +29,4 @@ Upon running the program, you will be presented with a menu with several options
 
 <b><h1>Acknowledgements</h1>
 
-This project was created with the aim of studying the Java language, and is not based on the knowledge learned at the ColmeiaTech Bootcamp.
+This project was created with the aim of studying the Java language, and is based on the knowledge learned at the ColmeiaTech Bootcamp.
