@@ -35,7 +35,17 @@ public class CrudMain {
         System.out.print("\nChoose an option: ");
         chooseMenu = sc.nextInt();
         sc.nextLine();
-        
+
+        switch (chooseMenu) {
+            case 1: // Functionality of adding a new product to the list
+                System.out.println("=========================================");
+                System.out.print("Enter the name of the product you want to add: ");
+                String productName = sc.nextLine();
+                products.add(productName);
+                System.out.print("Product added successfully!\n");
+                break;
+        } while (chooseMenu != 0);
+
         sc.close();
     }
 }
