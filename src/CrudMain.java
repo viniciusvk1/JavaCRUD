@@ -55,7 +55,7 @@ public class CrudMain {
                 System.out.print("Choose the product to be changed: ");
                 String searchProductName = sc.nextLine();
 
-                if (products.contains(searchProductName)) { // If the product exists in the queue it will be removed and one added in its place
+                if (products.contains(searchProductName)) { // If the product exists in the list it will be removed and one added in its place
                     System.out.print("Enter the product change: ");
                     String changeProductName = sc.nextLine();
                     products.remove(searchProductName);
@@ -67,8 +67,21 @@ public class CrudMain {
                 System.out.println("Updated products: ");
                 System.out.println(products);
                 break;
-
-
+            case 4: // Deleting products
+                System.out.println("=========================================");
+                System.out.println("Choose the product you want to delete: ");
+                String removeProduct = sc.nextLine();
+                if (products.contains(removeProduct)) { // if the indicated product exists in the list it will be excluded
+                    products.remove(removeProduct);
+                    System.out.println("Product excluded!\n");
+                } else { // otherwise, nothing will change
+                    System.out.println("Invalid product!\n");
+                }
+                System.out.println("Updated products: ");
+                System.out.println(products);
+                break;
+            default: //Default option to indicate an error of the user's choice
+                System.out.println("Invalid option!\n");
 
         }
         while (chooseMenu != 0) ;
