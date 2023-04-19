@@ -50,6 +50,24 @@ public class CrudMain {
                 System.out.println(products);
                 System.out.println();
                 break;
+            case 3: // Modification of added products in the queue
+                System.out.println("=========================================");
+                System.out.print("Choose the product to be changed: ");
+                String searchProductName = sc.nextLine();
+
+                if (products.contains(searchProductName)) { // If the product exists in the queue it will be removed and one added in its place
+                    System.out.print("Enter the product change: ");
+                    String changeProductName = sc.nextLine();
+                    products.remove(searchProductName);
+                    products.add(changeProductName);
+                    System.out.println("Altered product!\n");
+                } else { // House does not hold in line nothing will happen
+                    System.out.println("Invalid product!\n");
+                }
+                System.out.println("Updated products: ");
+                System.out.println(products);
+                break;
+
 
 
         }
